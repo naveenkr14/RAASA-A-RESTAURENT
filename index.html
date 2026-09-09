@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RAASA — traditional Indian cooking, remembered and reimagined." />
+    <title>RAASA — Indian cooking, remembered and reimagined.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="RAASA home">RAASA<span class="brand-dot">.</span></a>
+
+        <div class="desktop-nav">
+          <a href="#menu">Menu</a>
+          <a href="#story">Story</a>
+          <a href="#heritage">Heritage</a>
+          <a href="#drinks">Drinks</a>
+          <a href="#visit">Visit</a>
+          <a class="nav-reserve" href="#visit">Reserve</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+        <div class="mobile-menu-inner">
+          <div class="mobile-menu-label">Navigation</div>
+          <a href="#menu" data-menu-link>Menu</a>
+          <a href="#story" data-menu-link>Story</a>
+          <a href="#heritage" data-menu-link>Heritage</a>
+          <a href="#drinks" data-menu-link>Drinks</a>
+          <a href="#visit" data-menu-link>Visit</a>
+          <a class="mobile-reserve" href="#visit" data-menu-link>Reserve a table <span>↗</span></a>
+          <p class="mobile-menu-note">Old City Quarter<br />6pm — 11:30pm</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-dark" id="top" aria-labelledby="hero-title">
+        <canvas class="ember-canvas" aria-hidden="true" data-embers></canvas>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-lamp" aria-hidden="true">
+          <svg viewBox="0 0 360 520" role="img" aria-label="A glowing brass lamp surrounded by embers">
+            <defs>
+              <radialGradient id="lampAura" cx="50%" cy="49%" r="50%">
+                <stop offset="0" stop-color="#D9A441" stop-opacity=".25" />
+                <stop offset=".42" stop-color="#D9A441" stop-opacity=".06" />
+                <stop offset="1" stop-color="#D9A441" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="brass" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#8d6823" />
+                <stop offset=".38" stop-color="#f2c66c" />
+                <stop offset=".62" stop-color="#a47527" />
+                <stop offset="1" stop-color="#4e3a18" />
+              </linearGradient>
+              <filter id="softGlow"><feGaussianBlur stdDeviation="8" /></filter>
+            </defs>
+            <circle cx="180" cy="258" r="185" fill="url(#lampAura)" />
+            <ellipse cx="180" cy="225" rx="48" ry="23" fill="#D9A441" opacity=".25" filter="url(#softGlow)" />
+            <path d="M156 222c0-33 11-53 24-73 13 20 24 40 24 73-10 11-38 11-48 0Z" fill="#D9A441" opacity=".88" />
+            <path d="M180 133c-8-15 1-29 7-39 9 18 6 31-7 39Z" fill="#EFE7D6" opacity=".65" />
+            <path d="M180 150c-22 28-42 45-42 73 0 31 19 53 42 53s42-22 42-53c0-28-20-45-42-73Z" fill="none" stroke="url(#brass)" stroke-width="3" opacity=".82" />
+            <path d="M138 223c11 13 27 19 42 19s31-6 42-19" fill="none" stroke="url(#brass)" stroke-width="3" />
+            <path d="M119 235c7 24 26 38 61 38s54-14 61-38" fill="none" stroke="#8b6525" stroke-width="3" />
+            <path d="M112 235c0 34 29 57 68 57s68-23 68-57" fill="none" stroke="url(#brass)" stroke-width="6" />
+            <path d="M108 234c14 13 39 20 72 20s58-7 72-20" fill="none" stroke="#e1b657" stroke-width="2" opacity=".8" />
+            <path d="M180 292v93" stroke="url(#brass)" stroke-width="5" />
+            <path d="M135 393c14-12 30-17 45-17s31 5 45 17" fill="none" stroke="url(#brass)" stroke-width="5" />
+            <path d="M105 419h150c-8 30-35 44-75 44s-67-14-75-44Z" fill="none" stroke="url(#brass)" stroke-width="5" />
+            <path d="M90 420c22 8 51 13 90 13s68-5 90-13" fill="none" stroke="#D9A441" stroke-width="2" opacity=".7" />
+          </svg>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">An evening of Indian cooking</p>
+            <h1 id="hero-title">The recipes change.<br /><em>The fire remembers.</em></h1>
+            <p class="hero-intro">Regional Indian cooking shaped by traditional fire, seasonal ingredients, hand-ground spices and recipes passed from one generation to the next.</p>
+            <div class="hero-actions">
+              <a class="button button-filled" href="#visit">Reserve a table <span>↗</span></a>
+              <a class="button button-quiet" href="#menu">Explore the menu <span>↓</span></a>
+            </div>
+            <div class="hero-meta" aria-label="Restaurant details">
+              <div><span>Where</span>Old City Quarter</div>
+              <div><span>Open</span>6pm – 11:30pm</div>
+              <div><span>At the table</span>Vegetarian &amp; Non-Vegetarian</div>
+            </div>
+          </div>
+          <div class="hero-art-space" aria-hidden="true"></div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span> Scroll to explore</div>
+      </section>
+
+      <section class="story section-bone" id="story" aria-labelledby="story-title">
+        <div class="container story-grid">
+          <div class="section-marker reveal">
+            01 <span>Our story</span>
+            <div class="story-dish" role="img" aria-label="A beautifully plated Indian dish on a ceramic plate">
+              <svg viewBox="0 0 420 420" aria-hidden="true">
+                <defs>
+                  <radialGradient id="plate-fill" cx="42%" cy="34%" r="70%"><stop offset="0" stop-color="#f5ead5"/><stop offset=".72" stop-color="#d7c8aa"/><stop offset="1" stop-color="#bca27a"/></radialGradient>
+                  <radialGradient id="dal-fill" cx="38%" cy="28%"><stop offset="0" stop-color="#e7aa49"/><stop offset="1" stop-color="#a85c26"/></radialGradient>
+                  <linearGradient id="paneer-fill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d99e49"/><stop offset="1" stop-color="#9b4925"/></linearGradient>
+                  <linearGradient id="green-fill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#84926d"/><stop offset="1" stop-color="#3e5237"/></linearGradient>
+                  <filter id="plate-shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+                </defs>
+                <ellipse cx="210" cy="222" rx="178" ry="165" fill="#8c3a22" opacity=".14" filter="url(#plate-shadow)"/>
+                <circle cx="210" cy="202" r="177" fill="url(#plate-fill)" stroke="#8c3a22" stroke-opacity=".42" stroke-width="2"/>
+                <circle cx="210" cy="202" r="157" fill="none" stroke="#efe7d6" stroke-width="8" opacity=".74"/>
+                <circle cx="210" cy="202" r="151" fill="none" stroke="#8c3a22" stroke-opacity=".22" stroke-width="1.5"/>
+                <path d="M108 184c2-31 26-53 58-57 23-3 43 6 53 23 9 15 2 35-15 43-23 12-67 8-96-9Z" fill="#d6b86d" opacity=".35"/>
+                <ellipse cx="191" cy="210" rx="77" ry="59" fill="#eee1bd" stroke="#b14c2b" stroke-opacity=".28" stroke-width="2"/>
+                <path d="M139 207c18-13 29-10 45 2s29 15 45 1 29-10 47 0" fill="none" stroke="#d0a969" stroke-width="3" opacity=".62"/>
+                <path d="M137 222c22-11 34-9 50 2s28 10 44-2 31-10 52 2" fill="none" stroke="#d0a969" stroke-width="2" opacity=".52"/>
+                <path d="M145 238c19-10 29-7 43 2s29 12 45 0 28-9 47 1" fill="none" stroke="#d0a969" stroke-width="2" opacity=".45"/>
+                <ellipse cx="123" cy="133" rx="44" ry="36" fill="#71341f" stroke="#b14c2b" stroke-width="2"/>
+                <ellipse cx="123" cy="126" rx="38" ry="29" fill="url(#dal-fill)"/>
+                <path d="M91 126c15-15 31-17 47-5" fill="none" stroke="#f1c56c" stroke-width="3" opacity=".65"/>
+                <circle cx="111" cy="116" r="3" fill="#7c8f6c"/><circle cx="132" cy="139" r="3" fill="#7c8f6c"/><circle cx="140" cy="119" r="2.5" fill="#efe7d6"/>
+                <path d="M279 109l20 9 5 22-17 19-23-8-5-22Z" fill="url(#paneer-fill)" stroke="#7f3b23" stroke-width="1.5"/>
+                <path d="M302 122l20 9 5 21-17 17-23-10-1-18Z" fill="#bd7130" stroke="#7f3b23" stroke-width="1.5"/>
+                <path d="M281 149l19 8 2 20-18 14-21-10 1-18Z" fill="#d68c38" stroke="#7f3b23" stroke-width="1.5"/>
+                <path d="M267 112c11-14 19-16 27-17M303 105c9-10 19-11 27-7M263 188c13-11 22-13 32-5" fill="none" stroke="#7c8f6c" stroke-width="5" stroke-linecap="round"/>
+                <ellipse cx="116" cy="291" rx="45" ry="32" fill="#c5b28f" stroke="#8c3a22" stroke-opacity=".45" stroke-width="2"/>
+                <ellipse cx="116" cy="284" rx="38" ry="25" fill="#efe7d6"/>
+                <path d="M102 285c6-12 13-12 19-1 5-8 12-8 17-1" fill="none" stroke="#7c8f6c" stroke-width="4" stroke-linecap="round"/>
+                <path d="M287 276c18-21 40-17 50 5 7 15 0 32-14 38-19 8-40-5-42-22-1-7 1-14 6-21Z" fill="url(#green-fill)" stroke="#46583d" stroke-width="2"/>
+                <path d="M291 302c10-16 19-23 34-31M310 316c1-19 7-31 20-40M290 294c17 3 29 9 38 20" fill="none" stroke="#b6bd8d" stroke-width="3" opacity=".75"/>
+                <path d="M155 321c21-21 62-26 90-5 13 10 18 24 15 38-37 14-79 11-111-6-2-10 0-19 6-27Z" fill="#d8c08e" stroke="#8c3a22" stroke-opacity=".38" stroke-width="2"/>
+                <path d="M157 344c29 8 65 10 101 0" fill="none" stroke="#efe7d6" stroke-width="5" opacity=".75"/>
+                <circle cx="84" cy="220" r="4" fill="#b14c2b"/><circle cx="332" cy="224" r="4" fill="#d9a441"/><circle cx="216" cy="87" r="3" fill="#7c8f6c"/><circle cx="219" cy="328" r="3" fill="#b14c2b"/>
+              </svg>
+            </div>
+          </div>
+          <div class="story-main reveal">
+            <p class="eyebrow eyebrow-dark">A table set by memory</p>
+            <h2 id="story-title">A kitchen, a fire, and generations of memory.</h2>
+            <div class="story-body">
+              <p>Indian food was never meant to belong to one region, one recipe, or one table. It is a conversation between soil, season, spice and fire.</p>
+              <p>At Raasa, the kitchen moves through that conversation slowly. Vegetables meet the tandoor, lentils rest over charcoal, and marinades are given the time their ingredients ask for. We cook from the memory of family kitchens and the particularities of the places they came from.</p>
+            </div>
+            <div class="quote-block">
+              <blockquote>“We don't recreate the past. We cook what it taught us.”</blockquote>
+              <cite>— The kitchen at Raasa</cite>
+            </div>
+          </div>
+          <div class="story-aside reveal">
+            <div class="vertical-rule"></div>
+            <p>From the warm smoke of a tandoor to the bright lift of fresh coriander, every plate carries a little of where it began.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section-dark" id="menu" aria-labelledby="menu-title">
+        <div class="container">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="section-number">02 <span>The menu</span></p>
+              <h2 id="menu-title">From our fire<br /><em>to your table.</em></h2>
+            </div>
+            <p class="section-heading-note">A menu that travels through<br />the regions of India.</p>
+          </div>
+
+          <div class="menu-filters reveal" role="group" aria-label="Filter menu items" data-filters>
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Everything</button>
+            <button class="filter-button" type="button" data-filter="vegetarian" aria-pressed="false">Vegetarian</button>
+            <button class="filter-button" type="button" data-filter="non-vegetarian" aria-pressed="false">Non-Vegetarian</button>
+            <button class="filter-button" type="button" data-filter="tandoor" aria-pressed="false">Tandoor</button>
+            <button class="filter-button" type="button" data-filter="rice-breads" aria-pressed="false">Rice &amp; Breads</button>
+            <button class="filter-button" type="button" data-filter="desserts" aria-pressed="false">Desserts</button>
+          </div>
+
+          <div class="menu-grid" data-menu-grid>
+            <article class="menu-card reveal" data-category="vegetarian tandoor">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>From the tandoor</span></div>
+              <h3>Paneer Angara</h3><p>Charred paneer, smoked tomato, black cardamom.</p><span class="price">₹ 675</span>
+            </article>
+            <article class="menu-card reveal" data-category="vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>From the pot</span></div>
+              <h3>Dal Bukhara</h3><p>Slow-cooked black lentils, smoked butter.</p><span class="price">₹ 495</span>
+            </article>
+            <article class="menu-card reveal" data-category="vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>From the kitchen</span></div>
+              <h3>Bharwan Mushroom</h3><p>Stuffed mushrooms, cashew, coriander.</p><span class="price">₹ 575</span>
+            </article>
+            <article class="menu-card reveal" data-category="vegetarian tandoor">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>From the tandoor</span></div>
+              <h3>Malai Broccoli</h3><p>Charred broccoli, saffron cream, toasted spices.</p><span class="price">₹ 545</span>
+            </article>
+            <article class="menu-card reveal" data-category="non-vegetarian tandoor">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the tandoor</span></div>
+              <h3>Murgh Angaar</h3><p>Charcoal chicken, Kashmiri chilli, hung curd.</p><span class="price">₹ 725</span>
+            </article>
+            <article class="menu-card reveal" data-category="non-vegetarian tandoor">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the tandoor</span></div>
+              <h3>Mutton Seekh</h3><p>Hand-minced lamb, green chilli, coriander.</p><span class="price">₹ 795</span>
+            </article>
+            <article class="menu-card reveal" data-category="non-vegetarian">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the pot</span></div>
+              <h3>Nalli Rogan</h3><p>Slow-braised lamb shank, Kashmiri spices.</p><span class="price">₹ 1,050</span>
+            </article>
+            <article class="menu-card reveal" data-category="non-vegetarian tandoor">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the tandoor</span></div>
+              <h3>Lasooni Jhinga</h3><p>Garlic prawns, chilli, coriander.</p><span class="price">₹ 895</span>
+            </article>
+            <article class="menu-card reveal" data-category="tandoor vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>From the tandoor</span></div>
+              <h3>Tandoori Paneer</h3><p>Mustard marinade, charred onion, mint.</p><span class="price">₹ 625</span>
+            </article>
+            <article class="menu-card reveal" data-category="tandoor non-vegetarian">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the tandoor</span></div>
+              <h3>Murgh Tikka</h3><p>Boneless chicken, fenugreek, smoked yoghurt.</p><span class="price">₹ 695</span>
+            </article>
+            <article class="menu-card reveal" data-category="tandoor non-vegetarian">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the tandoor</span></div>
+              <h3>Seekh Kebab</h3><p>Minced lamb, clove, black pepper, lime.</p><span class="price">₹ 745</span>
+            </article>
+            <article class="menu-card reveal" data-category="tandoor non-vegetarian">
+              <div class="menu-card-top"><span class="dish-type nonveg">NV</span><span>From the tandoor</span></div>
+              <h3>Tandoori Jhinga</h3><p>Ajwain, chilli, charred lemon.</p><span class="price">₹ 875</span>
+            </article>
+            <article class="menu-card reveal" data-category="rice-breads vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Rice &amp; breads</span></div>
+              <h3>Saffron Biryani</h3><p>Seasonal vegetables, aged basmati, saffron.</p><span class="price">₹ 695</span>
+            </article>
+            <article class="menu-card reveal" data-category="rice-breads vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Rice &amp; breads</span></div>
+              <h3>Jeera Rice</h3><p>Aged basmati, cumin, clarified butter.</p><span class="price">₹ 325</span>
+            </article>
+            <article class="menu-card reveal" data-category="rice-breads vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Rice &amp; breads</span></div>
+              <h3>Garlic Naan</h3><p>Clay oven bread, garlic, coriander.</p><span class="price">₹ 225</span>
+            </article>
+            <article class="menu-card reveal" data-category="rice-breads vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Rice &amp; breads</span></div>
+              <h3>Roomali Roti</h3><p>Hand-stretched bread, warm from the griddle.</p><span class="price">₹ 175</span>
+            </article>
+            <article class="menu-card reveal" data-category="desserts vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Something sweet</span></div>
+              <h3>Gulab Jamun</h3><p>Khoya dumplings, rose syrup, pistachio.</p><span class="price">₹ 325</span>
+            </article>
+            <article class="menu-card reveal" data-category="desserts vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Something sweet</span></div>
+              <h3>Kesar Kulfi</h3><p>Slow-set saffron ice cream, almond praline.</p><span class="price">₹ 295</span>
+            </article>
+            <article class="menu-card reveal" data-category="desserts vegetarian">
+              <div class="menu-card-top"><span class="dish-type veg">V</span><span>Something sweet</span></div>
+              <h3>Gajar Halwa</h3><p>Winter carrots, cardamom, toasted nuts.</p><span class="price">₹ 295</span>
+            </article>
+          </div>
+          <p class="menu-footnote">V · Vegetarian &nbsp;&nbsp; NV · Non-Vegetarian &nbsp;&nbsp; Please let us know about allergies when booking.</p>
+        </div>
+      </section>
+
+      <section class="heritage section-bone" id="heritage" aria-labelledby="heritage-title">
+        <div class="container heritage-grid">
+          <div class="heritage-copy reveal">
+            <p class="eyebrow eyebrow-dark">03 &nbsp; The heritage</p>
+            <h2 id="heritage-title">The fire is part<br /><em>of the recipe.</em></h2>
+            <p>Before there was a timer, there was instinct. Before a kitchen had a name, there was the tandoor, the clay pot, the iron griddle, and a fire watched closely.</p>
+            <p>We use charcoal for its quiet depth, dum cooking for its patience, and hand-ground spices for their brightness. The techniques are old; the ingredients follow the season.</p>
+            <a class="text-link" href="#visit">Come see the kitchen <span>↗</span></a>
+          </div>
+          <div class="fire-illustration reveal" aria-hidden="true">
+            <svg viewBox="0 0 520 520">
+              <defs>
+                <radialGradient id="fireGlow"><stop offset="0" stop-color="#D9A441" stop-opacity=".26"/><stop offset="1" stop-color="#D9A441" stop-opacity="0"/></radialGradient>
+                <linearGradient id="tandoorStroke" x1="0" x2="1"><stop stop-color="#8C3A22"/><stop offset=".46" stop-color="#D9A441"/><stop offset="1" stop-color="#8C3A22"/></linearGradient>
+                <filter id="fireBlur"><feGaussianBlur stdDeviation="10" /></filter>
+              </defs>
+              <circle cx="260" cy="256" r="205" fill="url(#fireGlow)" />
+              <ellipse cx="260" cy="312" rx="135" ry="32" fill="#D9A441" opacity=".16" filter="url(#fireBlur)" />
+              <path d="M153 200c0-30 48-55 107-55s107 25 107 55v153c0 37-48 61-107 61s-107-24-107-61Z" fill="none" stroke="url(#tandoorStroke)" stroke-width="3" />
+              <ellipse cx="260" cy="201" rx="107" ry="39" fill="none" stroke="#D9A441" stroke-width="3" />
+              <ellipse cx="260" cy="201" rx="74" ry="22" fill="none" stroke="#8C3A22" stroke-width="2" />
+              <path d="M186 204c6 49 28 74 74 74s68-25 74-74" fill="none" stroke="#D9A441" stroke-width="2" opacity=".65" />
+              <path d="M169 354c25 22 58 32 91 32s66-10 91-32" fill="none" stroke="#B14C2B" stroke-width="3" />
+              <path d="M207 205c-10 31 7 54 20 63 13-19 13-36 0-54-4-6-11-11-20-9Z" fill="#D9A441" opacity=".55" />
+              <path d="M260 194c-14 35 4 61 23 72 16-24 14-46-4-64-5-5-11-9-19-8Z" fill="#D9A441" opacity=".8" />
+              <path d="M305 207c-8 26 4 45 17 53 12-19 11-35-1-49-4-5-9-7-16-4Z" fill="#D9A441" opacity=".48" />
+              <path d="M259 141V92M237 147l-25-45M282 147l25-45" stroke="#D9A441" stroke-width="2" opacity=".7" />
+              <circle cx="259" cy="87" r="4" fill="#D9A441"/><circle cx="209" cy="98" r="3" fill="#B14C2B"/><circle cx="309" cy="98" r="3" fill="#D9A441"/>
+              <path d="M116 412c46-17 96-25 144-25s98 8 144 25" fill="none" stroke="#8C3A22" stroke-width="2" opacity=".65" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="drinks-section section-charcoal" id="drinks" aria-labelledby="drinks-title">
+        <div class="container">
+          <div class="section-heading-row drinks-heading reveal">
+            <div>
+              <p class="section-number">04 <span>From the bar</span></p>
+              <h2 id="drinks-title">Cool, bright,<br /><em>and a little nostalgic.</em></h2>
+            </div>
+            <p class="section-heading-note">A few things to sip<br />between courses.</p>
+          </div>
+          <div class="drinks-grid">
+            <article class="drink-card reveal"><span class="drink-index">01</span><h3>Masala Chaas</h3><p>Spiced buttermilk, roasted cumin, mint.</p><span class="price">₹ 225</span></article>
+            <article class="drink-card reveal"><span class="drink-index">02</span><h3>Aam Panna</h3><p>Raw mango, cumin, mint.</p><span class="price">₹ 245</span></article>
+            <article class="drink-card reveal"><span class="drink-index">03</span><h3>Kesar Thandai</h3><p>Saffron, almond, cardamom.</p><span class="price">₹ 295</span></article>
+            <article class="drink-card reveal"><span class="drink-index">04</span><h3>Nimbu Soda</h3><p>Lemon, mint, sparkling water.</p><span class="price">₹ 195</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit section-bone" id="visit" aria-labelledby="visit-title">
+        <div class="container visit-grid">
+          <div class="visit-copy reveal">
+            <p class="eyebrow eyebrow-dark">05 &nbsp; Come by</p>
+            <h2 id="visit-title">Come sit<br /><em>at our table.</em></h2>
+            <p>A meal is best when there is time for it. Join us for an evening of regional Indian cooking, fire and slow conversation.</p>
+            <div class="visit-details">
+              <div><span>Find us</span><p>14 Dariba Lane<br />Old City Quarter<br />New Delhi 110006</p></div>
+              <div><span>Hours</span><p>Tuesday – Sunday<br />6pm – 11:30pm<br /><small>Kitchen closes at 10:45pm</small></p></div>
+            </div>
+          </div>
+          <div class="reservation-panel reveal">
+            <div class="reservation-top"><span>Reservations</span><span>We hold tables for 15 min.</span></div>
+            <form data-reservation-form>
+              <div class="form-row">
+                <label><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required /></label>
+                <label><span>Guests</span><select name="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+              </div>
+              <div class="form-row">
+                <label><span>Date</span><input type="date" name="date" required /></label>
+                <label><span>Time</span><select name="time"><option>7:00 pm</option><option>7:30 pm</option><option>8:00 pm</option><option>8:30 pm</option><option>9:00 pm</option></select></label>
+              </div>
+              <label><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required /></label>
+              <fieldset class="diet-field"><legend>Dietary preference</legend><div class="radio-row"><label><input type="radio" name="diet" value="none" checked /> <span>No preference</span></label><label><input type="radio" name="diet" value="vegetarian" /> <span>Vegetarian</span></label><label><input type="radio" name="diet" value="non-vegetarian" /> <span>Non-Vegetarian</span></label></div></fieldset>
+              <button class="button button-filled form-submit" type="submit">Request a table <span>↗</span></button>
+              <p class="form-note">For parties of 7 or more, please email hello@raasa.in</p>
+              <p class="form-confirmation" role="status" aria-live="polite" data-confirmation>Thank you — we'll be in touch to confirm your table.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-dark">
+      <div class="container footer-top">
+        <div><a class="brand footer-brand" href="#top">RAASA<span class="brand-dot">.</span></a><p>Indian cooking, remembered<br />and reimagined.</p></div>
+        <div class="footer-links"><div><span>Explore</span><a href="#menu">Menu</a><a href="#story">Story</a><a href="#heritage">Heritage</a></div><div><span>Visit</span><a href="#drinks">Drinks</a><a href="#visit">Reservations</a><a href="mailto:hello@raasa.in">Contact</a></div></div>
+        <div class="footer-social"><span>Follow along</span><a href="#top" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.7" r="1.1" fill="currentColor"/></svg><span>Instagram ↗</span></a><a href="#top" aria-label="Journal">Journal ↗</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© 2024 Raasa</span><span>Made with patience.</span><a href="#top">Back to top ↑</a></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
